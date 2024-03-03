@@ -1,0 +1,9 @@
+3.2.1.	Leer un carácter y posteriormente imprimirlo.
+3.2.2.	Leer un real y posteriormente imprimirlo.
+3.2.3.	Leer un real hallar el cuadrado posteriormente imprimirlo. 
+3.2.4.	Leer un real hallar el cubo posteriormente imprimirlo. 
+3.2.5.	Leer un real hallar:
+-	El doble.
+-	El  cuadrado,
+-	La suma del doble y el cuadrado y  posteriormente imprimirlo.
+
