@@ -145,4 +145,8 @@ print("El promedio en Química es:", calificacion_quimica)
 print("El promedio general en las tres materias más difíciles es:", promedio_general)
 ```
 
+3. Leer un real e imprimir si el número es positivo o negativo.
+
+   
+
 
