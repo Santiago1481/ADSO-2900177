@@ -200,6 +200,29 @@ else:
 
 6. Leer un real e imprimir si el número está en el rango de 50 y 100.
 
+```
+Inicio
+    // Leer el número real
+    Escribir "Ingrese un número real:"
+    Leer numero
+    
+    // Verificar si el número está en el rango de 50 y 100
+    Si numero >= 50 y numero <= 100 Entonces
+        Escribir "El número está en el rango de 50 y 100."
+    Sino
+        Escribir "El número no está en el rango de 50 y 100."
+    Fin Si
+Fin
+```
+
+```
+numero = float(input("Ingrese un número real:"))
+
+if numero >= 50 and numero <= 100:
+    print("El número está en el rango de 50 y 100.")
+else:
+    print("El número no está en el rango de 50 y 100.")
+```
 
 
    
