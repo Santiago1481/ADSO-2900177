@@ -50,3 +50,7 @@ print("Porcentaje de inversión de la persona 1:", porcentaje_persona1, "%")
 print("Porcentaje de inversión de la persona 2:", porcentaje_persona2, "%")
 print("Porcentaje de inversión de la persona 3:", porcentaje_persona3, "%")
 ```
+
+2.	Un alumno desea saber cuál será su promedio general en las tres materias más difíciles que cursa y cuál será el promedio que obtendrá en cada una de ellas. Estas materias se evalúan como se muestra a continuación:
+
+
