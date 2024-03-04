@@ -174,7 +174,7 @@ elif numero < 0:
 else:
     print("El número es cero.")
 ```
-5. Leer un real e imprimir si el número es mayor a 200 o no.
+4. Leer un real e imprimir si el número es mayor a 200 o no.
 
 ```
 Inicio
@@ -198,7 +198,7 @@ else:
     print("El número no es mayor a 200.")
 ```
 
-6. Leer un real e imprimir si el número está en el rango de 50 y 100.
+5. Leer un real e imprimir si el número está en el rango de 50 y 100.
 
 ```
 Inicio
