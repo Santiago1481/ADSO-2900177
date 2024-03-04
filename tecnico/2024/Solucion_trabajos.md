@@ -147,6 +147,61 @@ print("El promedio general en las tres materias más difíciles es:", promedio_g
 
 3. Leer un real e imprimir si el número es positivo o negativo.
 
+```
+Inicio
+   
+    Escribir "Ingrese un número real:"
+    Leer numero
+    
+    
+    Si numero > 0 Entonces
+        Escribir "El número es positivo."
+    Sino Si numero < 0 Entonces
+        Escribir "El número es negativo."
+    Sino
+        Escribir "El número es cero."
+    Fin Si
+Fin
+```
+
+```
+numero = float(input("Ingresa un número real: "))
+
+if numero > 0:
+    print("El número es positivo.")
+elif numero < 0:
+    print("El número es negativo.")
+else:
+    print("El número es cero.")
+```
+5. Leer un real e imprimir si el número es mayor a 200 o no.
+
+```
+Inicio
+     Escribir "Ingrese un número real:"
+    Leer numero
+    
+    Si numero > 200 Entonces
+        Escribir "El número es mayor a 200."
+    Sino
+        Escribir "El número no es mayor a 200."
+    Fin Si
+Fin
+```
+
+```
+numero = float(input("Ingrese un número real:"))
+
+if numero > 200:
+    print("El número es mayor a 200.")
+else:
+    print("El número no es mayor a 200.")
+```
+
+6. Leer un real e imprimir si el número está en el rango de 50 y 100.
+
+
+
    
 
 
