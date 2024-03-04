@@ -3,6 +3,7 @@
 1.	Tres personas deciden invertir su dinero para fundar una empresa. Cada una de ellas invierte una cantidad distinta. Obtener el porcentaje que cada quien invierte con respecto a la cantidad total invertida.
 
         ´´´ Inicio
+  	
   	        Definir persona1_inversion como real
   	        Definir persona2_inversion como real
   	        Definir persona3_inversion como real
@@ -29,4 +30,5 @@
                 mostrar "Porcentaje de inversión de la persona 1:", porcentaje_persona1, "%"
                 mostrar "Porcentaje de inversión de la persona 2:", porcentaje_persona2, "%"
                 mostrar "Porcentaje de inversión de la persona 3:", porcentaje_persona3, "%"
+  	
   	    ´´´Fin
