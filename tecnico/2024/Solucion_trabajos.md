@@ -71,17 +71,78 @@ print("Porcentaje de inversión de la persona 3:", porcentaje_persona3, "%")
 ```
 Inicio
 
-       Definir M
-       Definir F
-       Definir Q
+    Leer examen_matematicas
+    Leer tarea1_matematicas
+    Leer tarea2_matematicas
+    Leer tarea3_matematicas
+    
+   
+    promedio_tareas_matematicas = (tarea1_matematicas + tarea2_matematicas + tarea3_matematicas) / 3
+    
+    
+    calificacion_matematicas = examen_matematicas * 0.9 + promedio_tareas_matematicas * 0.1
+    
+   
+    Leer examen_fisica
+    Leer tarea1_fisica
+    Leer tarea2_fisica
+    
+    
+    promedio_tareas_fisica = (tarea1_fisica + tarea2_fisica) / 2
+    
+    
+    calificacion_fisica = examen_fisica * 0.8 + promedio_tareas_fisica * 0.2
+    
+   
+    Leer examen_quimica
+    Leer promedio_tareas_quimica
+    
+    
+    calificacion_quimica = examen_quimica * 0.85 + promedio_tareas_quimica * 0.15
+    
+    
+    promedio_general = (calificacion_matematicas + calificacion_fisica + calificacion_quimica) / 3
+    
+    
+    Mostrar "El promedio en Matemáticas es:", calificacion_matematicas
+    Mostrar "El promedio en Física es:", calificacion_fisica
+    Mostrar "El promedio en Química es:", calificacion_quimica
+    Mostrar "El promedio general en las tres materias más difíciles es:", promedio_general
 
-       Matematicas = M
-       Fisica = F
-       Quimica = Q
-
-       Escribir "Ingrese primer nota de matematicas"
-       
 Fin
+```
+
+```
+examen_matematicas = float(input("Ingrese la calificación del examen de Matemáticas: "))
+tarea1_matematicas = float(input("Ingrese la calificación de la primera tarea de Matemáticas: "))
+tarea2_matematicas = float(input("Ingrese la calificación de la segunda tarea de Matemáticas: "))
+tarea3_matematicas = float(input("Ingrese la calificación de la tercera tarea de Matemáticas: "))
+
+promedio_tareas_matematicas = (tarea1_matematicas + tarea2_matematicas + tarea3_matematicas) / 3
+calificacion_matematicas = examen_matematicas * 0.9 + promedio_tareas_matematicas * 0.1
+
+
+examen_fisica = float(input("Ingrese la calificación del examen de Física: "))
+tarea1_fisica = float(input("Ingrese la calificación de la primera tarea de Física: "))
+tarea2_fisica = float(input("Ingrese la calificación de la segunda tarea de Física: "))
+
+promedio_tareas_fisica = (tarea1_fisica + tarea2_fisica) / 2
+calificacion_fisica = examen_fisica * 0.8 + promedio_tareas_fisica * 0.2
+
+
+examen_quimica = float(input("Ingrese la calificación del examen de Química: "))
+promedio_tareas_quimica = float(input("Ingrese el promedio de las tres tareas de Química: "))
+
+calificacion_quimica = examen_quimica * 0.85 + promedio_tareas_quimica * 0.15
+
+
+promedio_general = (calificacion_matematicas + calificacion_fisica + calificacion_quimica) / 3
+
+
+print("El promedio en Matemáticas es:", calificacion_matematicas)
+print("El promedio en Física es:", calificacion_fisica)
+print("El promedio en Química es:", calificacion_quimica)
+print("El promedio general en las tres materias más difíciles es:", promedio_general)
 ```
 
 
