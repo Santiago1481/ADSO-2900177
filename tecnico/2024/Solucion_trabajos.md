@@ -68,4 +68,20 @@ print("Porcentaje de inversión de la persona 3:", porcentaje_persona3, "%")
         Promedio de tareas 15%
     En esta materia se pidió un promedio de tres tareas.
 
+```
+Inicio
+
+       Definir M
+       Definir F
+       Definir Q
+
+       Matematicas = M
+       Fisica = F
+       Quimica = Q
+
+       Escribir "Ingrese primer nota de matematicas"
+       
+Fin
+```
+
 
