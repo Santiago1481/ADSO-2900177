@@ -52,7 +52,8 @@ print("Porcentaje de inversión de la persona 3:", porcentaje_persona3, "%")
 ```
 
 2.	Un alumno desea saber cuál será su promedio general en las tres materias más difíciles que cursa y cuál será el promedio que obtendrá en cada una de ellas. Estas materias se evalúan como se muestra a continuación:
- -	La calificación de Matemáticas se obtiene de la siguiente manera:
+	
+    -	La calificación de Matemáticas se obtiene de la siguiente manera:
         Examen 90%
         Promedio de tareas 10%
         En esta materia se pidió un total de tres tareas.
