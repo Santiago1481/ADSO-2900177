@@ -34,3 +34,19 @@ Inicio
 
 Fin
 ```
+
+```
+persona1_inversion = float(input("Ingrese cantidad de la inversión de la primer persona: "))
+persona2_inversion = float(input("Ingrese cantidad de la inversión de la segunda persona: "))
+persona3_inversion = float(input("Ingrese cantidad de la inversión de la tercer persona: "))
+
+total_invertido = persona1_inversion + persona2_inversion + persona3_inversion
+
+porcentaje_persona1 = (persona1_inversion / total_invertido) * 100
+porcentaje_persona2 = (persona2_inversion / total_invertido) * 100
+porcentaje_persona3 = (persona3_inversion / total_invertido) * 100
+
+print("Porcentaje de inversión de la persona 1:", porcentaje_persona1, "%")
+print("Porcentaje de inversión de la persona 2:", porcentaje_persona2, "%")
+print("Porcentaje de inversión de la persona 3:", porcentaje_persona3, "%")
+```
