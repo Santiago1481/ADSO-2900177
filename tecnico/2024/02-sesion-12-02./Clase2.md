@@ -1,4 +1,4 @@
-$ Ejercicio de Conocimientos Previos: Sistema de Gestión de Ventas
+ Ejercicio de Conocimientos Previos: Sistema de Gestión de Ventas
 
 ## Descripción del Proyecto
 Desarrollar un sistema de gestión de ventas que incluye las entidades de clientes, productos, facturas y detalles de factura.
