@@ -82,10 +82,66 @@ if booleano:
 
 -	Aplicando la fórmula F = P * ( 1+i )^n
 
-2. Calcular el número de pulsaciones que una persona debe tener por cada 10 segundos de ejercicio, si la fórmula es:
-			num. Pulsaciones = (220 - edad)/10
+```
+Inicio
+    Definir P como 1000000  // Cantidad inicial
+    Definir i como 0.025    // Tasa de interés mensual (2.5%)
+    Definir n como 12       // Número de meses en un año
+    Definir F como P        // Inicializar el monto final con la cantidad inicial
 
-3. En un hospital existen tres áreas: Ginecología, Pediatría, Traumatología. El presupuesto anual del hospital se reparte conforme a la sig. tabla:
+    Para cada mes de 1 a n
+        F = F * (1 + i)  // Calcular el monto final para cada mes
+    Fin Para
+
+    Mostrar "Al final de 1 año, se tendrá:", F, "pesos"
+Fin
+```
+```
+# Definir las variables
+P = 1000000  # Cantidad inicial
+i = 0.025    # Tasa de interés mensual (2.5%)
+n = 12       # Número de meses en un año
+F = P        # Inicializar el monto final con la cantidad inicial
+
+# Calcular el monto final para cada mes
+for mes in range(1, n + 1):
+    F *= (1 + i)
+
+# Mostrar el resultado
+print("Al final de 1 año, se tendrá:", F, "pesos")
+```
+
+2. Calcular el número de pulsaciones que una persona debe tener por cada 10 segundos de ejercicio, si la fórmula es
+ 
+num. Pulsaciones = (220 - edad)/10
+
+
+```
+Inicio
+    Leer edad  // Se solicita la edad de la persona
+    Definir numPulsaciones como entero  // Variable para almacenar el número de pulsaciones
+
+    numPulsaciones = (220 - edad) / 10  // Calcular el número de pulsaciones
+
+    Mostrar "El número de pulsaciones por cada 10 segundos de ejercicio es:", numPulsaciones
+Fin
+
+```
+```
+# Solicitar la edad de la persona
+edad = int(input("Ingrese la edad de la persona: "))
+
+# Calcular el número de pulsaciones por cada 10 segundos de ejercicio
+numPulsaciones = (220 - edad) / 10
+
+# Mostrar el resultado
+print("El número de pulsaciones por cada 10 segundos de ejercicio es:", numPulsaciones)****
+```
+
+
+
+
+4. En un hospital existen tres áreas: Ginecología, Pediatría, Traumatología. El presupuesto anual del hospital se reparte conforme a la sig. tabla:
 	
 			Área			Porcentaje del presupuesto
 			Ginecología			40%
