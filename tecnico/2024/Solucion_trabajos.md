@@ -141,7 +141,7 @@ print("El número de pulsaciones por cada 10 segundos de ejercicio es:", numPuls
 
 
 
-4. En un hospital existen tres áreas: Ginecología, Pediatría, Traumatología. El presupuesto anual del hospital se reparte conforme a la sig. tabla:
+3. En un hospital existen tres áreas: Ginecología, Pediatría, Traumatología. El presupuesto anual del hospital se reparte conforme a la sig. tabla:
 	
 			Área			Porcentaje del presupuesto
 			Ginecología			40%
@@ -150,9 +150,125 @@ print("El número de pulsaciones por cada 10 segundos de ejercicio es:", numPuls
 -	Obtener la cantidad de dinero que recibirá cada área, para cualquier monto presupuestal.
 
 =========================================
+
+
+```
+Inicio
+    Leer montoPresupuestal  // Se solicita el monto presupuestal total
+    Definir ginecologia como real  // Variable para almacenar la cantidad para Ginecología
+    Definir traumatologia como real  // Variable para almacenar la cantidad para Traumatología
+    Definir pediatria como real  // Variable para almacenar la cantidad para Pediatría
+
+    // Calcular la cantidad para cada área
+    ginecologia = montoPresupuestal * 0.40
+    traumatologia = montoPresupuestal * 0.30
+    pediatria = montoPresupuestal * 0.30
+
+    // Mostrar los resultados
+    Mostrar "La cantidad para Ginecología es:", ginecologia
+    Mostrar "La cantidad para Traumatología es:", traumatologia
+    Mostrar "La cantidad para Pediatría es:", pediatria
+Fin
+```
+```
+# Solicitar el monto presupuestal total
+montoPresupuestal = float(input("Ingrese el monto presupuestal total: "))
+
+# Calcular la cantidad para cada área
+ginecologia = montoPresupuestal * 0.40
+traumatologia = montoPresupuestal * 0.30
+pediatria = montoPresupuestal * 0.30
+
+# Mostrar los resultados
+print("La cantidad para Ginecología es:", ginecologia)
+print("La cantidad para Traumatología es:", traumatologia)
+print("La cantidad para Pediatría es:", pediatria)
+```
 1.2.6.	Todos los lunes, miércoles y viernes, una persona corre la misma ruta y cronometra los tiempos obtenidos. Determinar el tiempo promedio que la persona tarda en recorrer la ruta en una semana cualquiera.
+
+```
+Inicio
+    Definir sumaTiempos como entero
+    Definir contador como entero
+
+    sumaTiempos = 0
+    contador = 0
+
+    Para cada día de la semana
+        Si el día es lunes, miércoles o viernes:
+            Leer tiempo
+            sumaTiempos = sumaTiempos + tiempo
+            Incrementar contador en 1
+        Fin Si
+    Fin Para
+
+    Si contador es mayor que 0:
+        tiempoPromedio = sumaTiempos / contador
+        Mostrar "El tiempo promedio de la semana es:", tiempoPromedio
+    Sino:
+        Mostrar "No se registraron tiempos en los días indicados."
+    Fin Si
+Fin
+```
+
+```
+# Definir una lista para almacenar los tiempos
+tiempos = []
+
+# Iterar sobre los días de la semana
+for dia in ["lunes", "miércoles", "viernes"]:
+    # Solicitar el tiempo corrido en el día especificado
+    tiempo = input(f"Ingrese el tiempo en minutos para el día {dia}: ")
+    
+    # Convertir el tiempo a un número entero y agregarlo a la lista de tiempos
+    tiempos.append(int(tiempo))
+
+# Calcular el promedio de los tiempos
+if tiempos:
+    promedio = sum(tiempos) / len(tiempos)
+    print("El tiempo promedio de la semana es:", promedio, "minutos")
+else:
+    print("No se registraron tiempos en los días indicados.")
+```
 	
 1.2.7.	Tres personas deciden invertir su dinero para fundar una empresa. Cada una de ellas invierte una cantidad distinta. Obtener el porcentaje que cada quien invierte con respecto a la cantidad total invertida.
+
+```
+Inicio
+    Leer inversion_persona1
+    Leer inversion_persona2
+    Leer inversion_persona3
+
+    total_invertido = inversion_persona1 + inversion_persona2 + inversion_persona3
+
+    porcentaje_persona1 = (inversion_persona1 / total_invertido) * 100
+    porcentaje_persona2 = (inversion_persona2 / total_invertido) * 100
+    porcentaje_persona3 = (inversion_persona3 / total_invertido) * 100
+
+    Mostrar "Porcentaje invertido por la persona 1:", porcentaje_persona1, "%"
+    Mostrar "Porcentaje invertido por la persona 2:", porcentaje_persona2, "%"
+    Mostrar "Porcentaje invertido por la persona 3:", porcentaje_persona3, "%"
+Fin
+```
+```
+# Solicitar la cantidad invertida por cada persona
+inversion_persona1 = float(input("Ingrese la cantidad invertida por la persona 1: "))
+inversion_persona2 = float(input("Ingrese la cantidad invertida por la persona 2: "))
+inversion_persona3 = float(input("Ingrese la cantidad invertida por la persona 3: "))
+
+# Calcular la cantidad total invertida
+total_invertido = inversion_persona1 + inversion_persona2 + inversion_persona3
+
+# Calcular el porcentaje que cada persona invierte respecto al total invertido
+porcentaje_persona1 = (inversion_persona1 / total_invertido) * 100
+porcentaje_persona2 = (inversion_persona2 / total_invertido) * 100
+porcentaje_persona3 = (inversion_persona3 / total_invertido) * 100
+
+# Mostrar los porcentajes
+print("Porcentaje invertido por la persona 1:", porcentaje_persona1, "%")
+print("Porcentaje invertido por la persona 2:", porcentaje_persona2, "%")
+print("Porcentaje invertido por la persona 3:", porcentaje_persona3, "%")
+```
 
 1.2.8.	Un alumno desea saber cuál será su promedio general en las tres materias más difíciles que cursa y cuál será el promedio que obtendrá en cada una de ellas. Estas materias se evalúan como se muestra a continuación:
 
@@ -172,16 +288,285 @@ print("El número de pulsaciones por cada 10 segundos de ejercicio es:", numPuls
 •	En esta materia se pidió un promedio de tres tareas.
 
 
+```
+# Calificaciones del alumno en cada materia
+calificaciones = {
+    'Matemáticas': {'Examen': 90, 'Tareas': [80, 85, 90]},
+    'Física': {'Examen': 80, 'Tareas': [70, 75]},
+    'Química': {'Examen': 85, 'Tareas': [90, 85, 80]}
+}
+
+# Función para calcular el promedio de una materia
+def calcular_promedio_materia(calificacion):
+    promedio_examenes = calificacion['Examen'] * 0.9
+    promedio_tareas = sum(calificacion['Tareas']) / len(calificacion['Tareas']) * 0.1
+    return promedio_examenes + promedio_tareas
+
+# Calcular el promedio en cada materia
+for materia, calificacion in calificaciones.items():
+    promedio = calcular_promedio_materia(calificacion)
+    print(f"El promedio en {materia} es: {promedio}")
+
+# Calcular el promedio general
+promedios_materias = [calcular_promedio_materia(calificacion) for calificacion in calificaciones.values()]
+promedio_general = sum(promedios_materias) / len(promedios_materias)
+print(f"El promedio general en las tres materias más difíciles es: {promedio_general}")
+```
+```
+(calificacion)
+        promedio_examenes = calificacion['Examen'] * 0.9
+        promedio_tareas = sum(calificacion['Tareas']) / longitud(calificacion['Tareas']) * 0.1
+        retornar promedio_examenes + promedio_tareas
+    Fin Función
+
+    // Calcular el promedio en cada materia
+    Para cada materia, calificacion en calificaciones
+        promedio = calcular_promedio_materia(calificacion)
+        Mostrar "El promedio en ", materia, " es: ", promedio
+    Fin Para
+
+    // Calcular el promedio general
+    Definir promedios_materias como lista
+    Para cada calificacion en calificaciones
+        Agregar calcular_promedio_materia(calificacion) a promedios_materias
+    Fin Para
+    promedio_general = sumar(promedios_materias) / longitud(promedios_materias)
+    Mostrar "El promedio general en las tres materias más difíciles es: ", promedio_general
+Fin
+
+```
+
 
 1.1.26.	Grados kelvin a grados Fahrenheit.
+```
+Inicio
+    Leer Kelvin
+    Fahrenheit = (Kelvin - 273.15) * (9/5) + 32
+    Mostrar Fahrenheit
+Fin
+```
+```
+def kelvin_a_fahrenheit(kelvin):
+    fahrenheit = (kelvin - 273.15) * (9/5) + 32
+    return fahrenheit
+
+kelvin = float(input("Ingrese la temperatura en grados Kelvin: "))
+fahrenheit = kelvin_a_fahrenheit(kelvin)
+print("La temperatura en grados Fahrenheit es:", fahrenheit)
+```
+
 1.1.27.	Grados kelvin a grados Celsius.
+```
+Inicio
+    Leer Kelvin
+    Celsius = Kelvin - 273.15
+    Mostrar Celsius
+Fin
+```
+```
+def kelvin_a_celsius(kelvin):
+    celsius = kelvin - 273.15
+    return celsius
+
+kelvin = float(input("Ingrese la temperatura en grados Kelvin: "))
+celsius = kelvin_a_celsius(kelvin)
+print("La temperatura en grados Celsius es:", celsius)
+```
 1.1.28.	Pesos colombianos a dólares, bolívares, soles, pesetas y francos.
+```
+Inicio
+    Leer pesos_colombianos
+    Dólares = pesos_colombianos / tasa_de_cambio_dólar
+    Bolívares = pesos_colombianos / tasa_de_cambio_bolívar
+    Soles = pesos_colombianos / tasa_de_cambio_sol
+    Pesetas = pesos_colombianos / tasa_de_cambio_peseta
+    Francos = pesos_colombianos / tasa_de_cambio_franco
+    Mostrar Dólares, Bolívares, Soles, Pesetas, Francos
+Fin
+```
+```
+def pesos_a_otras_divisas(pesos_colombianos, tasas_de_cambio):
+    divisas = {}
+    for divisa, tasa in tasas_de_cambio.items():
+        cantidad = pesos_colombianos / tasa
+        divisas[divisa] = cantidad
+    return divisas
+
+pesos_colombianos = float(input("Ingrese la cantidad en pesos colombianos: "))
+tasas_de_cambio = {
+    "Dólares": tasa_de_cambio_dólar,
+    "Bolívares": tasa_de_cambio_bolívar,
+    "Soles": tasa_de_cambio_sol,
+    "Pesetas": tasa_de_cambio_peseta,
+    "Francos": tasa_de_cambio_franco
+}
+resultados = pesos_a_otras_divisas(pesos_colombianos, tasas_de_cambio)
+for divisa, cantidad in resultados.items():
+    print(f"La cantidad en {divisa} es: {cantidad}")
+```
 1.1.29.	Dólares pesos colombianos,  bolívares, soles, pesetas y francos.
+```
+Inicio
+    Leer dólares
+    Pesos_colombianos = dólares * tasa_de_cambio_dólar
+    Bolívares = dólares * tasa_de_cambio_dólar / tasa_de_cambio_bolívar
+    Soles = dólares * tasa_de_cambio_dólar / tasa_de_cambio_sol
+    Pesetas = dólares * tasa_de_cambio_dólar / tasa_de_cambio_peseta
+    Francos = dólares * tasa_de_cambio_dólar / tasa_de_cambio_franco
+    Mostrar Pesos_colombianos, Bolívares, Soles, Pesetas, Francos
+Fin
+```
+```
+ef dolares_a_otras_divisas(dolares, tasas_de_cambio):
+    divisas = {}
+    for divisa, tasa in tasas_de_cambio.items():
+        cantidad = dolares * tasa
+        divisas[divisa] = cantidad
+    return divisas
+
+dolares = float(input("Ingrese la cantidad en dólares: "))
+tasas_de_cambio = {
+    "Pesos colombianos": tasa_de_cambio_dólar,
+    "Bolívares": tasa_de_cambio_bolívar,
+    "Soles": tasa_de_cambio_sol,
+    "Pesetas": tasa_de_cambio_peseta,
+    "Francos": tasa_de_cambio_franco
+}
+resultados = dolares_a_otras_divisas(dolares, tasas_de_cambio)
+for divisa, cantidad in resultados.items():
+    print(f"La cantidad en {divisa} es: {cantidad}")
+```
 1.1.30.	Bolívares a pesos colombianos, dólares, soles, pesetas y francos.
+```
+Inicio
+    Leer bolívares
+    Pesos_colombianos = bolívares * tasa_de_cambio_bolívar
+    Dólares = bolívares * tasa_de_cambio_bolívar / tasa_de_cambio_dólar
+    Soles = bolívares * tasa_de_cambio_bolívar / tasa_de_cambio_sol
+    Pesetas = bolívares * tasa_de_cambio_bolívar / tasa_de_cambio_peseta
+    Francos = bolívares * tasa_de_cambio_bolívar / tasa_de_cambio_franco
+    Mostrar Pesos_colombianos, Dólares, Soles, Pesetas, Francos
+Fin
+```
+```
+ef bolivares_a_otras_divisas(bolivares, tasas_de_cambio):
+    divisas = {}
+    for divisa, tasa in tasas_de_cambio.items():
+        cantidad = bolivares * tasa
+        divisas[divisa] = cantidad
+    return divisas
+
+bolivares = float(input("Ingrese la cantidad en bolívares: "))
+tasas_de_cambio = {
+    "Pesos colombianos": tasa_de_cambio_bolívar,
+    "Dólares": tasa_de_cambio_bolívar / tasa_de_cambio_dólar,
+    "Soles": tasa_de_cambio_bolívar / tasa_de_cambio_sol,
+    "Pesetas": tasa_de_cambio_bolívar / tasa_de_cambio_peseta,
+    "Francos": tasa_de_cambio_bolívar / tasa_de_cambio_franco
+}
+resultados = bolivares_a_otras_divisas(bolivares, tasas_de_cambio)
+for divisa, cantidad in resultados.items():
+    print(f"La cantidad en {divisa} es: {cantidad}")
+```
 1.1.31.	Soles a pesos colombianos, dólares, bolívares, pesetas y francos.
+```
+Inicio
+    Leer soles
+    Pesos_colombianos = soles * tasa_de_cambio_sol
+    Dólares = soles * tasa_de_cambio_sol / tasa_de_cambio_dólar
+    Bolívares = soles * tasa_de_cambio_sol / tasa_de_cambio_bolívar
+    Pesetas = soles * tasa_de_cambio_sol / tasa_de_cambio_peseta
+    Francos = soles * tasa_de_cambio_sol / tasa_de_cambio_franco
+    Mostrar Pesos_colombianos, Dólares, Bolívares, Pesetas, Francos
+Fin
+```
+```
+def soles_a_otras_divisas(soles, tasas_de_cambio):
+    divisas = {}
+    for divisa, tasa in tasas_de_cambio.items():
+        cantidad = soles * tasa
+        divisas[divisa] = cantidad
+    return divisas
+
+soles = float(input("Ingrese la cantidad en soles: "))
+tasas_de_cambio = {
+    "Pesos colombianos": tasa_de_cambio_sol,
+    "Dólares": tasa_de_cambio_sol / tasa_de_cambio_dólar,
+    "Bolívares": tasa_de_cambio_sol / tasa_de_cambio_bolívar,
+    "Pesetas": tasa_de_cambio_sol / tasa_de_cambio_peseta,
+    "Francos": tasa_de_cambio_sol / tasa_de_cambio_franco
+}
+resultados = soles_a_otras_divisas(soles, tasas_de_cambio)
+for divisa, cantidad in resultados.items():
+    print(f"La cantidad en {divisa} es: {cantidad}")
+```
 1.1.32.	Calcular la distancia entre dos puntos en el plano cartesiano
+```
+Inicio
+    Leer x1, y1, x2, y2
+    Distancia = raíz_cuadrada((x2 - x1)^2 + (y2 - y1)^2)
+    Mostrar Distancia
+Fin
+```
+```
+import math
+
+def calcular_distancia(x1, y1, x2, y2):
+    distancia = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+    return distancia
+
+x1 = float(input("Ingrese la coordenada x del primer punto: "))
+y1 = float(input("Ingrese la coordenada y del primer punto: "))
+x2 = float(input("Ingrese la coordenada x del segundo punto: "))
+y2 = float(input("Ingrese la coordenada y del segundo punto: "))
+
+distancia = calcular_distancia(x1, y1, x2, y2)
+print("La distancia entre los dos puntos es:", distancia)
+```
 1.1.33.	Hallar el área de un triángulo rectángulo.
+```
+Inicio
+    Leer base, altura
+    Área = (base * altura) / 2
+    Mostrar Área
+Fin
+```
+```
+def calcular_area_triangulo_rectangulo(base, altura):
+    area = (base * altura) / 2
+    return area
+
+base = float(input("Ingrese la base del triángulo rectángulo: "))
+altura = float(input("Ingrese la altura del triángulo rectángulo: "))
+
+area = calcular_area_triangulo_rectangulo(base, altura)
+print("El área del triángulo rectángulo es:", area)
+```
 1.1.34.	Hallar la solución a la ecuación cuadrática  9x² + 6x + 10.
+```
+Inicio
+    Calcular discriminante = 6^2 - 4 * 9 * 10
+    Si discriminante es mayor o igual a 0
+        Calcular solución_1 = (-6 + raíz_cuadrada(discriminante)) / (2 * 9)
+        Calcular solución_2 = (-6 - raíz_cuadrada(discriminante)) / (2 * 9)
+        Mostrar solución
+
+```
+```
+import cmath
+
+def hallar_soluciones_ecuacion_cuadratica(a, b, c):
+    discriminante = (b**2) - (4*a*c)
+    if discriminante >= 0:
+        solucion_1 = (-b + cmath.sqrt(discriminante)) / (2 * a)
+        solucion_2 = (-b - cmath.sqrt(discriminante)) / (2 * a)
+        return solucion_1, solucion_2
+    else:
+        return "No hay soluciones reales"
+
+solucion_1, solucion_2 = hallar_soluciones_ecuacion_cuadratica(9, 6, 10)
+print("Las soluciones de la ecuación cuadrática son:", solucion_1, "y", solucion_2)
+```
 
 ## Taller 3
 
