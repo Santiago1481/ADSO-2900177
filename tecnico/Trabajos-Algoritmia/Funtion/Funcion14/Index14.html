@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><script src="JS14.js"></script>
+</head>
+<body>
+    <script>
+       let diasTrabajados = 30;
+        let pagoDia = 45000;
+        let sueldoT = salario(diasTrabajados,pagoDia);
+        let subtranport = Subtrasnporte(diasTrabajados,pagoDia);
+        let saludT = aportesSal(diasTrabajados,pagoDia);
+        let pensionT = aportesPen(diasTrabajados,pagoDia);
+        let arlT = aportesArl(diasTrabajados,pagoDia);
+        let retenciones = retencionSal(diasTrabajados,pagoDia);
+        let sueldoTotal = sueldoFin(diasTrabajados,pagoDia);
+        console.log("Su sueldo total es de: "+sueldoT);
+        console.log("Su subsidio de tranporte es de: "+subtranport)
+        console.log("Su aporte de Salud es de: "+saludT);
+        console.log("Su aporte de Pension es de: "+pensionT);
+        console.log("Su aporte de Arl es de: "+arlT);
+        console.log("Sus retenciones equivalen a: "+retenciones);
+        console.log("Su sueldo total a pagar es de: "+sueldoTotal);
+    </script>
+</body>
+</html>

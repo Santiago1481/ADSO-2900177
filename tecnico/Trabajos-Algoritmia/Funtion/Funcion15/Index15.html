@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><script src="JS15.js"></script>
+</head>
+<body>
+    <script>
+        let numero1 = 4.5;
+        let numero2 = 4.5;
+        let numero3 = 4.5;
+        let poorcentajes1 = 0.2;
+        let poorcentajes2 = 0.35;
+        let poorcentajes3 = 0.45;
+        let porcentajeN1 = porcentaje(numero1,poorcentajes1);
+        let porcentajeN2 = porcentaje(numero2,poorcentajes2);
+        let porcentajeN3 = porcentaje(numero3,poorcentajes3);
+        let condition = condicion(porcentajeN1,porcentajeN2,porcentajeN3);
+        console.log("Sus notas son: "+"\n"+numero1+" x "+poorcentajes1+"\n"+numero2+" x "+poorcentajes2+"\n"+numero3+" x "+poorcentajes3);
+        console.log("Sun calificacion no sera por notas: "+"\n"+"SUPERIOR es si tuvo mayor de 4.5"+"\n"+"BUENO si tuvo mayor que 3.5 o menor de 4.5"+"\n"+"MEDIO si obtubo menos de 3.5 pero mañor de 3.0"+"\n"+"MALO si obtuvo menos de 3.0"+"\n"+"\n"+"\n"+"SU NOTA ES :"+condition);
+    </script>
+</body>
+</html>

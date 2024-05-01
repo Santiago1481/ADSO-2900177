@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago sueldo</title><script src="JS8.js"></script>
+</head>
+<body>
+    <script>
+        let diasTrabajados = 30;
+        let pagoDia = 35000;
+        let sueldoT = sueldo(diasTrabajados,pagoDia);
+        let saludT = salud(diasTrabajados,pagoDia);
+        let pensionT = pension(diasTrabajados,pagoDia);
+        let arlT = arl(diasTrabajados,pagoDia);
+        let sueldoTotal = sueldoAp(diasTrabajados,pagoDia);
+        console.log("Su sueldo total es de: "+sueldoT);
+        console.log("Su aporte de Salud es de: "+saludT);
+        console.log("Su aporte de Pension es de: "+pensionT);
+        console.log("Su aporte de Arl es de: "+arlT);
+        console.log("Su sueldo total a pagar es de: "+sueldoTotal);
+    </script>
+</body>
+</html> 

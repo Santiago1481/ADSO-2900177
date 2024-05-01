@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sueldo sencillo</title>
+</head>
+<body>
+    
+    <script>
+        let diasT, pagoD, salario, salud, pension, arl, descuentos, sueldoTotal;
+        diasT = prompt("Ingrese los dias Trabajados"), pagoD = prompt ("Indique (Escriba) cuanto gana al dia");
+        salario = diasT*pagoD;
+        salud = salario * 0.12, pension = salario * 0.16, arl = salario * 0.052;
+        descuentos = salud + pension + arl;
+        sueldoTotal = salario - descuentos;
+        console.log("Su sueldo sin descuentos es de: "+salario);
+        console.log("Su descuento de salud es: "+salud);
+        console.log("Su descuento de pension es: "+pension);
+        console.log("Su descuento de Administradora de Riesgos Laborales es: "+arl);
+        console.log("Su sueldo a pagar es de: "+sueldoTotal);
+
+        
+    </script>
+    
+</body>
+</html>
