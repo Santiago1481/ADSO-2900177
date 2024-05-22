@@ -1,0 +1,42 @@
+/*
+Estilos Tabla loca
+Autor: Santiago CR
+20-05-2024
+*/
+.arriba{
+    float: left;
+    display: block;
+    width: 1200px;
+}
+
+.abajo{
+    float: lefts;
+    margin-top: 620px;
+}
+
+.periodo{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 1400px;
+    height:80px;
+}
+
+.periodo-interno{
+    display: flex;
+
+}
+
+.celda{
+    float: left;
+    border: 1px solid #333;
+    height: 80px;
+}
+.celda-trasparente{
+    float: left;
+    border: none;
+    height: 80px;
+}
+.titulo{
+    text-align: center;
+    color: blue;
+}
