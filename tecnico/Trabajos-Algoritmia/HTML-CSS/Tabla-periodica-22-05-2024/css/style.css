@@ -40,3 +40,9 @@ Autor: Santiago CR
     text-align: center;
     color: blue;
 }
+.relleno{
+    float: left;
+    display: block;
+    flex-wrap: nowrap;
+    border: #333;
+}
