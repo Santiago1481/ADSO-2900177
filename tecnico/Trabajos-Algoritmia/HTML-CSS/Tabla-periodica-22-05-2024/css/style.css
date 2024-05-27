@@ -28,8 +28,10 @@ Autor: Santiago CR
 
 .celda{
     float: left;
-    border: 1px solid #333;
+    border: 1px solid black; 
     height: 80px;
+    padding: 5px; 
+    text-align: center; 
 }
 .celda-trasparente{
     float: left;
