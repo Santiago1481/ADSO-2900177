@@ -8,12 +8,10 @@ Autor: Santiago CR
     display: block;
     width: 1200px;
 }
-
 .abajo{
     float: lefts;
     margin-top: 620px;
 }
-
 .periodo{
     display: flex;
     flex-wrap: nowrap;
@@ -25,13 +23,13 @@ Autor: Santiago CR
     display: flex;
 
 }
-
 .celda{
     float: left;
     border: 1px solid black; 
     height: 80px;
     padding: 5px; 
     text-align: center; 
+    border-radius: 20%;
 }
 .celda-trasparente{
     float: left;
@@ -39,12 +37,24 @@ Autor: Santiago CR
     height: 80px;
 }
 .titulo{
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
     color: blue;
 }
-.relleno{
-    float: left;
-    display: block;
-    flex-wrap: nowrap;
-    border: #333;
+.no-metal{
+    background-color: rgb(238, 1, 1);
+}
+.simbolo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: start;
+    margin-bottom: -15px;
+}
+.nombre{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+.masa-atomica{
+    text-align: end;
+    font-size: 10px;
+    margin-top: -8px;
 }
