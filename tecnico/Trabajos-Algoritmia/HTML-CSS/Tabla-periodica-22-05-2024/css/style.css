@@ -3,6 +3,9 @@ Estilos Tabla loca
 Autor: Santiago CR
 20-05-2024
 */
+body{
+    background-color: rgb(223, 234, 234);
+}
 .arriba{
     float: left;
     display: block;
@@ -42,7 +45,7 @@ Autor: Santiago CR
     color: blue;
 }
 .no-metal{
-    background-color: rgb(238, 1, 1);
+    background-color: rgb(203, 99, 99);
 }
 .simbolo{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -51,10 +54,41 @@ Autor: Santiago CR
 }
 .nombre{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 15px;
+    font-size: 12px;
 }
 .masa-atomica{
     text-align: end;
-    font-size: 10px;
-    margin-top: -8px;
+    font-size: 8px;
+    margin-top: -10px;
 }
+.dencidad{
+    text-align: end;
+    font-size: 8px;
+    margin-top: -2px;
+}
+.metales-blancos{
+    background-color: aliceblue;
+}
+.nombre-H{
+    color: red;
+}
+.metales-grupo1{
+    background-color: rgb(246, 143, 234);
+}
+.metales-grupo2{
+    background-color: rgb(82, 53, 79);
+}
+.metales-trancision{
+    background-color: green;
+}
+.gases-nobles{
+    background-color: rgb(90, 140, 220);
+}
+.otros-metales{
+    background-color: yellow;
+}
+.lantano-actinio{
+    background-color: greenyellow;
+}
+
+
