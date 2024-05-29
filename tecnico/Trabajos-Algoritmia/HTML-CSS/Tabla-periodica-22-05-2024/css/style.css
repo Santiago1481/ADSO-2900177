@@ -45,7 +45,7 @@ body{
     color: blue;
 }
 .no-metal{
-    background-color: rgb(203, 99, 99);
+    background-color: rgb(226, 124, 124);
 }
 .simbolo{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -72,11 +72,14 @@ body{
 .nombre-H{
     color: red;
 }
+.nombre-o{
+    color: black;
+}
 .metales-grupo1{
-    background-color: rgb(246, 143, 234);
+    background-color: rgb(251, 173, 242);
 }
 .metales-grupo2{
-    background-color: rgb(82, 53, 79);
+    background-color: rgb(179, 54, 166);
 }
 .metales-trancision{
     background-color: green;
