@@ -42,7 +42,12 @@ body{
 .titulo{
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    color: blue;
+    color: rgb(112, 5, 5);
+}
+.sub-titulo{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: black;
 }
 .no-metal{
     background-color: rgb(226, 124, 124);
@@ -92,6 +97,9 @@ body{
 }
 .lantano-actinio{
     background-color: greenyellow;
+}
+.azul{
+    color: aqua;
 }
 
 
