@@ -13,7 +13,12 @@ body{
 }
 .abajo{
     float: lefts;
+    margin-top: 5px;
+}
+.medio{
+    float: lefts;
     margin-top: 620px;
+    flex-wrap: nowrap;
 }
 .periodo{
     display: flex;
@@ -33,6 +38,20 @@ body{
     padding: 5px; 
     text-align: center; 
     border-radius: 20%;
+}
+.celda2 {
+    float: left;
+    border: 1px solid black;
+    height: 50px;
+    padding: 4px;
+    text-align: center;
+    border-radius: 20%;
+    max-width: 120%; 
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    background-color: rgb(209, 215, 219);
 }
 .celda-trasparente{
     float: left;
@@ -57,6 +76,13 @@ body{
     text-align: start;
     margin-bottom: -15px;
 }
+.simbolo2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: start;
+    margin-bottom: 0; 
+    flex: 1;
+    font-size: 16px;
+}
 .nombre{
     font-family: 'Times New Roman', Times, serif;
     font-size: 12px;
@@ -71,35 +97,43 @@ body{
     font-size: 8px;
     margin-top: -2px;
 }
+.blancos{
+    color: white;
+}
 .metales-blancos{
-    background-color: aliceblue;
+    background-color: rgb(209, 215, 219);
 }
 .nombre-H{
-    color: red;
+    color: rgb(208, 33, 33);
 }
 .nombre-o{
     color: black;
 }
 .metales-grupo1{
-    background-color: rgb(251, 173, 242);
+    background-color: rgb(251, 173, 216);
 }
 .metales-grupo2{
-    background-color: rgb(179, 54, 166);
+    background-color: rgb(206, 68, 192);
 }
 .metales-trancision{
-    background-color: green;
+    background-color: rgb(24, 177, 24);
 }
 .gases-nobles{
-    background-color: rgb(90, 140, 220);
+    background-color: rgb(121, 164, 231);
 }
 .otros-metales{
     background-color: yellow;
 }
 .lantano-actinio{
-    background-color: greenyellow;
+    background-color: rgb(145, 208, 50);
 }
 .azul{
-    color: aqua;
+    color: rgb(50, 81, 215);
+}
+.lantanidos{
+    text-align: start;
+    font-size: small;
+    color: black;
 }
 
 
