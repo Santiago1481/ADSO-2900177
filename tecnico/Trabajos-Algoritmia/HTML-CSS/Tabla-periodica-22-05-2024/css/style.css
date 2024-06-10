@@ -4,7 +4,7 @@ Autor: Santiago CR
 20-05-2024
 */
 body{
-    background-color: rgb(223, 234, 234);
+    background-color: rgb(211, 224, 228);
 }
 .arriba{
     float: left;
@@ -134,6 +134,9 @@ body{
     text-align: start;
     font-size: small;
     color: black;
+}
+.boton-invisible {
+    display: none;
 }
 
 
