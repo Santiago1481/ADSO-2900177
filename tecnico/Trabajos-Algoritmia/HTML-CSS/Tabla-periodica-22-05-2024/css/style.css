@@ -20,6 +20,7 @@ body{
     margin-top: 620px;
     flex-wrap: nowrap;
 }
+/* importante numero 1 */
 .periodo{
     display: flex;
     flex-wrap: nowrap;
@@ -31,6 +32,7 @@ body{
     display: flex;
 
 }
+/* importante numero 2 */
 .celda{
     float: left;
     border: 1px solid black; 
@@ -83,6 +85,7 @@ body{
     flex: 1;
     font-size: 16px;
 }
+/* importante parte 3 */
 .nombre{
     font-family: 'Times New Roman', Times, serif;
     font-size: 12px;
