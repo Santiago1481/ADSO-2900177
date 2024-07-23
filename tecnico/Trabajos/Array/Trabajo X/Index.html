@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabjo </title>
+    <!-- link de bootstrap -->
+     <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+     <script src="/bootstrap/js/bootstrap.js"></script>
+    <!-- link de estilos  -->
+     <link rel="stylesheet" href="/css/estilos.css">
+     <!-- link js -->
+</head>
+<body>
+    <div class="container">
+        <div class="titulo col-4 row " >
+            <H1>BINGO</H1>
+        </div>
+        <form class=" col-4 g-3 needs-validation formulario" novalidate onsubmit="return recibirValor()">
+            <div class="col-md-8 contendor-input">
+              <label for="txtMensaje" class="form-label">First name</label>
+              <input type="text" class="form-control" id="txtMensaje"  required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class=" boton-enviar col-12">
+              <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+        </form>
+        <div id="resultado">
+
+        </div>
+
+    </div>
+
+    <script src="js/bingo.js"></script>
+
+</body>
+</html>
