@@ -1,6 +1,6 @@
 /**
  * BINGO
- * Auntor: Jesus Fernando Carvajal
+ * Auntor: Santiago Ch
  * 
  */
 

@@ -1,5 +1,5 @@
 /**
- * Autor: Jesus fernando carvajal
+ * Autor: Santiago Ch
  * Ejercio: Nomina de persona
  * Fecha creacion: 15 de mayo de 2024
  */
@@ -70,8 +70,8 @@ let nomina = [
     {
         tipoIdentificacion: 'T.I',
         numeroIdentificacion: 1076503110,
-        nombres: 'Jesus Fernando',
-        apellidos: 'Carvajal Anacona',
+        nombres: 'Pedro elso',
+        apellidos: 'chicamocha',
         edad: 17,
         estrato: 1,
         valorDia: 3000,
@@ -80,8 +80,8 @@ let nomina = [
     {
         tipoIdentificacion: 'T.I',
         numeroIdentificacion: 1087653575,
-        nombres: 'Juan Manuel',
-        apellidos: 'Gutierrez',
+        nombres: 'camila',
+        apellidos: 'rodrigues',
         edad: 16,
         estrato: 1,
         valorDia: 500000,
