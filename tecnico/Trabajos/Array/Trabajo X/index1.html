@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <script src="bootstrap/js/bootstrap.js"></script>
     <link rel="stylesheet" href="/css/estilos.css">
 </head>
+
 <body>
     <div class="container">
         <div class="sumaT row col-12">
@@ -16,11 +18,25 @@
         <div class=" diseño col-12 row">
             <div class="ingresar col-7">
                 <h4>Ingrese primer numero</h4>
-                <input type="number" name="primer-numero" id="primer" onsubmit="return funcionSuma()">
-                <br>
-                <h4>Ingrese segundo numero</h4>
-                <input type="number" name="segundo-numero" id="segundo">
-                <button type="button" class="btn btn-success" id="bottonn">Success</button>
+                <form class="row g-3 needs-validation formulario" novalidate onsubmit="return funcionSuma()">
+                    <div class="col-md-4">
+                        <label for="validaNum1" class="form-label">Primer numero</label>
+                        <input type="number" class="form-control" id="validaNum1" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validaNum2" class="form-label">Segundo numero</label>
+                        <input type="number" class="form-control" id="validaNum2" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Calcular</button>
+                    </div>
+                </form>
             </div>
             <div class="resultado col-4" id="result">
 
@@ -29,4 +45,5 @@
     </div>
     <script src="js/bingo.js"></script>
 </body>
+
 </html>

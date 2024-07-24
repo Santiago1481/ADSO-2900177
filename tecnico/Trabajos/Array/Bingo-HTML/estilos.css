@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(35, 99, 118);
+}
+.titulo {
+    color: whitesmoke;
+    margin-block-end: 100px;
+    text-align: center;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #190774; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Esquinas redondeadas */
+}
+.estilos{
+    background-color: #190774;
+    border-radius: 8px;
+    color: white;
+}
+.estiloA{
+    margin-left: 50px;
+}
+.header{
+    height: 180px;
+}
+.texto-bingo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.bg-success {
+    background-color: yellow !important;
+}

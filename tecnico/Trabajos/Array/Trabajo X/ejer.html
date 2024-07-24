@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bingo</title>
+    <!-- links bootstrap -->
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+    <script src="Bootstrap/js/bootstrap.js"></script>
+    <!-- link Css -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- link fontawezome -->
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+<body>
+    <h1 class="titulo">Bingo <i class="fa-solid fa-gamepad"></i></h1>
+    <div class="container">
+        <div class="row">
+            <div class="login col-4 row estilos header">
+                <form class="row g-3 needs-validation" novalidate onsubmit="return valide();">
+                    <div class="col-md-12">
+                        <label for="valideNumero" class="form-label"><strong>REGISTRAR</strong></label>
+                        <input type="number" class="form-control" id="valideNumero" required>
+                        <div class="valid-feedback">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Enviar <i class="fa-solid fa-share-from-square"></i></button>
+                    </div>
+                </form>
+            </div>
+            <div class="acordeon col-7 row estiloA">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header texto-bingo">
+                            <button class="accordion-button texto-bingo" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <p style="padding-left: 40%; height: 2px;"><strong>BINGO SENA</strong></p>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div id="tablaBingo"></div> <!-- Aquí se mostrará la tabla del bingo generada -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- link js -->
+    <script src="js/bingo23.js"></script> 
+</body>
+</html>
