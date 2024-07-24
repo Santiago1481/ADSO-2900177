@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prueba4</title>
+</head>
+<body>
+    <script>
+        //Numeros del 1 hats n 
+        let numeros = [];
+        let interacion;
+        let n = parseInt(prompt("Ingrese numero entero."));
+        for(interacion=0;interacion<n;interacion++){
+            numeros.push(interacion);
+        }
+        // Pares e Impares
+        let par = [];
+        let impar = [];
+        for(let interacion2 = 0; interacion2<numeros.length;interacion2++){
+            if(numeros[interacion2]%2==0){
+                par.push(numeros[interacion2]);
+            }
+            else{
+                impar.push(numeros[interacion2]);
+            }
+        }
+        console.log(numeros);
+        console.log(par);
+        console.log(impar);
+
+        // numeros primos
+        let primos = [];
+        for(let num of numeros){
+            let siPrimo = true;
+            if(num<2){
+                let noPrimo = false;
+            }
+            else{
+                for(let iteracion3 = 2;iteracion3<num;iteracion3++){
+                    if(num%iteracion3===0){
+                        siPrimo = false;
+                        break;
+
+                    }
+                }
+            }
+            if(siPrimo){
+                primos.push(num);
+            }
+        }
+        console.log(primos)
+    </script>
+</body>
+</html>
