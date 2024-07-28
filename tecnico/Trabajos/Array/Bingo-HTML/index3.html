@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bingo</title>
     <script src="Bootstrap/js/bootstrap.js"></script>
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="estilos.css">
@@ -23,12 +23,21 @@
                     <div class="col-12">
                         <button class="btn btn-primary" type="button" onclick="actualizarTablaBingo()">Enviar <i class="fa-solid fa-share-from-square"></i></button>
                     </div>
+                    <!-- Botones para resaltar filas -->
+                    <div class="col-12 mt-2">
+                        <button class="btn btn-secondary" type="button" onclick="resaltarPrimeraFila()">Resaltar Primera Fila</button>
+                        <button class="btn btn-secondary" type="button" onclick="resaltarSegundaFila()">Resaltar Segunda Fila</button>
+                        <button class="btn btn-secondary" type="button" onclick="resaltarTerceraFila()">Resaltar Tercera Fila</button>
+                        <button class="btn btn-secondary" type="button" onclick="resaltarCuartaFila()">Resaltar Cuarta Fila</button>
+                        <button class="btn btn-secondary" type="button" onclick="resaltarQuintaFila()">Resaltar Quinta Fila</button>
+                        <button class="btn btn-warning mt-2" type="button" onclick="marcarX()">Marcar X</button>
+                    </div>
                 </form>
             </div>
             <div class="acordeon col-7 row estiloA">
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
-                        <h2 class="accordion-header texto-bingo" >
+                        <h2 class="accordion-header texto-bingo">
                             <button class="accordion-button texto-bingo" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 <p style="padding-left: 40%; height: 2px;"><strong>BINGO SENA</strong></p>
                             </button>

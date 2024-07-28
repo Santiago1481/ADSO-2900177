@@ -1,30 +1,47 @@
-body{
+body {
     background-color: rgb(35, 99, 118);
 }
+
 .titulo {
     color: whitesmoke;
     margin-block-end: 100px;
     text-align: center;
     font-style: normal;
     font-family: 'Times New Roman', Times, serif;
-    background-color: #190774; /* Color de fondo */
-    padding: 20px; /* Espaciado interno */
-    border-radius: 10px; /* Esquinas redondeadas */
+    background-color: #190774;
+    padding: 20px;
+    border-radius: 10px;
 }
-.estilos{
+
+.estilos {
     background-color: #190774;
     border-radius: 8px;
     color: white;
 }
-.estiloA{
+
+.estiloA {
     margin-left: 50px;
 }
-.header{
+
+.header {
     height: 180px;
 }
-.texto-bingo{
+
+.texto-bingo {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.bg-success {
-    background-color: yellow !important;
+
+.table-bordered {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.tr-resaltada {
+    background-color: yellow !important; /* Cambia el color según tu preferencia */
 }
