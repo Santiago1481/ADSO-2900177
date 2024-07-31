@@ -41,44 +41,12 @@ function actualizarTablaBingo() {
     document.getElementById('numero21').innerHTML = `La tabla del bingo es del ${numero}`;
 }
 
-// Función para resaltar una fila específica
-function resaltarFila(filaIndex) {
-    console.log(`resaltarFila(${filaIndex}) llamado`);
-    let filas = document.querySelectorAll('#tabla-bingo tr');
-    for (let iteracion33 = 0; iteracion33 < filas.length; iteracion33++) {
-        filas[iteracion33].style.backgroundColor = ''; 
-    }
-    if (filaIndex >= 0 && filaIndex < filas.length) {
-        console.log(`Resaltando la fila ${filaIndex + 1}`);
-        filas[filaIndex].style.backgroundColor = 'yellow'; 
-    } else {
-        console.log(`Índice ${filaIndex} no válido. No se puede resaltar.`);
-    }
-}
 
-// Funciones específicas para cada fila
-function resaltarPrimeraFila() {
-    resaltarFila(0);
-}
 
-function resaltarSegundaFila() {
-    resaltarFila(1);
-}
 
-function resaltarTerceraFila() {
-    resaltarFila(2);
-}
-
-function resaltarCuartaFila() {
-    resaltarFila(3);
-}
-
-function resaltarQuintaFila() {
-    resaltarFila(4);
-}
 
 function marcarX() {
-    console.log('marcarX() llamado');
+    // console.log('marcarX() llamado');
     let tabla = document.querySelector('#tabla-bingo');
     let filas = tabla.querySelectorAll('tr');
 
@@ -101,3 +69,68 @@ function marcarX() {
         }
     }
 }
+
+function marcarLetraB() {
+    let tabla = document.querySelector('#tabla-bingo');
+    let filas = tabla.querySelectorAll('tr');
+
+    // Limpia cualquier color previo de las celdas
+    for (let iteracionUno = 0; iteracionUno < filas.length; iteracionUno++) {
+        let celdas = filas[iteracionUno].querySelectorAll('td');
+        for (let iteracionDos = 0; iteracionDos < celdas.length; iteracionDos++) {
+            celdas[iteracionDos].style.backgroundColor = ''; 
+        }
+    }
+
+    for (let iteracion = 0; iteracion < filas.length; iteracion++) {
+        let celdas = filas[iteracion].querySelectorAll('td');
+            celdas[0].style.backgroundColor = 'yellow';
+        
+    }
+}
+
+function marcarLetraI() {
+    let tabla = document.querySelector('#tabla-bingo');
+    let filas = tabla.querySelectorAll('tr');
+
+    // Limpia cualquier color previo de las celdas
+    for (let iteracionUno = 0; iteracionUno < filas.length; iteracionUno++) {
+        let celdas = filas[iteracionUno].querySelectorAll('td');
+        for (let iteracionDos = 0; iteracionDos < celdas.length; iteracionDos++) {
+            celdas[iteracionDos].style.backgroundColor = ''; 
+        }
+    }
+
+    for (let iteracion = 0; iteracion < filas.length; iteracion++) {
+        let celdas = filas[iteracion].querySelectorAll('td');
+            celdas[1].style.backgroundColor = 'yellow';
+        
+    }
+}
+
+function marcarPrimeraX() {
+    // console.log('marcarX() llamado');
+    let tabla = document.querySelector('#tabla-bingo');
+    let filas = tabla.querySelectorAll('tr');
+
+    // Limpia cualquier color previo de las celdas
+    for (let iteracion44 = 0; iteracion44 < filas.length; iteracion44++) {
+        let celdas = filas[iteracion44].querySelectorAll('td');
+        for (let iteracion55 = 0; iteracion55 < celdas.length; iteracion55++) {
+            celdas[iteracion55].style.backgroundColor = ''; 
+        }
+    }
+
+
+    for (let iteracion66 = 0; iteracion66 < 3; iteracion66++) {
+        let celdas = filas[iteracion66].querySelectorAll('td');
+        if (iteracion66 < celdas.length) {
+            celdas[iteracion66 + 1].style.backgroundColor = 'yellow';
+        }
+
+        if (celdas.length - 1 - iteracion66 >= 0) {
+            celdas[celdas.length - 1 - (iteracion66+1)].style.backgroundColor = 'yellow';
+        }
+    }
+}
+
